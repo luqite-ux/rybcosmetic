@@ -1,0 +1,2 @@
+body:has(.hq-login) .hq-header,
+body:has(.hq-login) .hq-footer { display: none; }
