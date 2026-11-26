@@ -44,6 +44,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         {children}
         <SiteFooter />
+        <script
+          async
+          src={`https://admin.globle-trade.com/api/public/analytics.js?tenantId=${encodeURIComponent(process.env.NEXT_PUBLIC_TENANT_ID || "dc50a045-0a41-461e-8501-bed81a8e21d9")}`}
+        />
       </body>
     </html>
   )
